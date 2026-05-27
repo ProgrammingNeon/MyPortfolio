@@ -34,9 +34,9 @@ navLinks.forEach(link => {
 
 
 document.getElementById('contact-form').addEventListener('submit', async (e) => {
-    e.preventDefault(); // Зупиняємо стандартне перезавантаження сторінки
+    e.preventDefault(); 
 
-    // Збираємо дані (перевір, щоб у input/textarea були відповідні id)
+    
     const formData = {
         name: document.getElementById('name-input').value,
         email: document.getElementById('email-input').value,
@@ -48,9 +48,9 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
     button.disabled = true;
 
     try {
-        // Заміни URL на той, який дасть Vercel чи інший хостинг
-        const response = await fetch('http://127.0.0.1:8000/api/send-message', {
-            method: 'POST',            headers: {
+        const response = await fetch('https://my-portfolio-nine-nu-23.vercel.app/api/send-message', {
+            method: 'POST',
+            headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(formData)
@@ -58,7 +58,7 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
 
         if (response.ok) {
             alert('Повідомлення надіслано успішно!');
-            e.target.reset(); // Очищуємо форму
+            e.target.reset(); 
         } else {
             alert('Щось пішло не так. Спробуйте пізніше.');
         }
