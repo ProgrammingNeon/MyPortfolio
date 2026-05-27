@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Stack Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">&lt;</span>ALEX<span class="logo-accent"> /&gt;</span>
+            </a>
+
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link active">Головна</a>
+                <a href="#stack" class="nav-link">Стек</a>
+                <a href="#projects" class="nav-link">Проєкти</a>
+                <a href="#experience" class="nav-link">Досвід</a>
+                <a href="#contact" class="nav-link">Контакти</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="https://github.com/ProgrammingNeon" target="_blank" class="social-icon" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="btn-resume">
+                    <span>CV</span> <i class="fa-solid fa-arrow-down-to-line"></i>
+                </a>
+                <button class="burger-menu" id="burger-btn" aria-label="Відкрити меню">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Доступний для нових проєктів</span>
+                </div>
+                <h1 class="hero-title">
+                    Привіт, я Олексій. <br>
+                    <span class="text-gradient">Full-Stack Developer</span> <br>
+                    з архітектурним мисленням.
+                </h1>
+                <p class="hero-subtitle">
+                    Проєктую високонавантажені бекенд-системи та створюю інтуїтивно зрозумілі, швидкі інтерфейси. Перетворюю складні технічні завдання на елегантні цифрові продукти.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">Подивитись роботи</a>
+                    <a href="#contact" class="btn-secondary">Зв'язатись зі мною</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-glow"></div>
+                <div class="visual-card-backend">
+                    <div class="card-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="card-code">
+                        <span class="code-keyword">const</span> app = <span class="code-function">express</span>();<br>
+                        app.<span class="code-function">use</span>(<span class="code-variable">database</span>);<br>
+                        app.<span class="code-function">listen</span>(<span class="code-number">8080</span>);
+                    </div>
+                </div>
+                <div class="visual-card-frontend">
+                    <div class="card-header">
+                        <span class="dot-alt"></span>
+                        <span class="dot-alt"></span>
+                    </div>
+                    <div class="card-ui">
+                        <div class="ui-bar"></div>
+                        <div class="ui-circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="stack" id="stack">
+        <div class="stack-container">
+            <div class="stack-header">
+                <h2 class="stack-title">Мій технологічний стек</h2>
+                <p class="stack-subtitle">Інструменти та технології, які я використовую для створення надійних рішень</p>
+            </div>
+            
+            <div class="stack-grid">
+                <div class="stack-card">
+                    <div class="card-glow"></div>
+                    <div class="card-icon-wrapper">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <h3>Backend</h3>
+                    <ul class="stack-list">
+                        <li>Python (FastAPI / aiogram)</li>
+                        <li>C++</li>
+                        <li>REST API / WebSockets</li>
+                        <li>SQLAlchemy</li>
+                    </ul>
+                </div>
+
+                <div class="stack-card">
+                    <div class="card-glow"></div>
+                    <div class="card-icon-wrapper">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Frontend</h3>
+                    <ul class="stack-list">
+                        <li>JavaScript (ES6+)</li>
+                        <li>TypeScript</li>
+                        <li>HTML5 / CSS3</li>
+                        <li>Адаптивна верстка</li>
+                    </ul>
+                </div>
+
+                <div class="stack-card">
+                    <div class="card-glow"></div>
+                    <div class="card-icon-wrapper">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3>DevOps & DB</h3>
+                    <ul class="stack-list">
+                        <li>PostgreSQL</li>
+                        <li>SQLite</li>
+                        <li>Docker / Git</li>
+                        <li>Linux / SSH</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="projects" id="projects">
+        <div class="projects-container">
+            <div class="projects-header">
+                <h2 class="projects-title">Обрані проєкти</h2>
+                <p class="projects-subtitle">Реальні кейси, де поєднано складну логіку бекенду та сучасні інтерфейси</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <!-- <div class="project-image-placeholder">
+                            <i class="fa-solid fa-mountain-sun"></i>
+                        </div> -->
+                        <img src="img/AlpsTravel.png" alt="AlpsTravel Platform">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">SQLAlchemy</span>
+                            <span class="tag">aiogram</span>
+                            <span class="tag">JS</span>
+                        </div>
+                        <h3>AlpsTravel Platform</h3>
+                        <p class="project-description">
+                            Веб-платформа для бронювання гірських турів, інтегрована з Telegram-ботом на бекенді для миттєвої обробки заявок користувачів та управління формами.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                            <a href="#" target="_blank" class="project-link link-external">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <!-- <div class="project-image-placeholder">
+                            <i class="fa-solid fa-robot"></i>
+                        </div> -->
+                        <img src="img/AlexiyATM.png" alt="AlexiyATM Bot">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">aiogram</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <h3>AlexiyATM Bot</h3>
+                        <p class="project-description">
+                            Автоматизована система Telegram-бота з функціоналом банкомата, що забезпечує роботу з балансом користувача, транзакціями та логуванням операцій у БД.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/ProgrammingNeon/ATM" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                            <a href="https://t.me/ATM_alexnoha_bot" target="_blank" class="project-link link-external">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo (only works when running on the server)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="experience" id="experience">
+        <div class="experience-container">
+            <div class="experience-header">
+                <h2 class="experience-title">Досвід та шлях</h2>
+                <p class="experience-subtitle">Як розвивалися мої навички в архітектурі та розробці програмного забезпечення</p>
+            </div>
+
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2026 — Теперішній час</div>
+                    <div class="timeline-content">
+                        <h3>Full-Stack Freelance Developer</h3>
+                        <p class="timeline-text">
+                            Спеціалізуюся на проєктуванні бекенд-архітектури за допомогою FastAPI, автоматизації процесів через Telegram-ботів (aiogram) та створенні сучасних клієнтських інтерфейсів. Інтегрую бази даних PostgreSQL, оптимізую SQL-запити через SQLAlchemy та контейнеризую додатки за допомогою Docker для стабільного деплою на сервери.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025 — 2026</div>
+                    <div class="timeline-content">
+                        <h3>Pet-проєкти & Open Source</h3>
+                        <p class="timeline-text">
+                            Розробляв та підтримував власні складні системи, включаючи трекінгові платформи та фінансові симулятори ботів. Поглиблено вивчав алгоритми на C++, асинхронність у JavaScript (ES6+), роботу з WebSockets для обміну даними в реальному часі та адміністрування Linux-серверів через SSH.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Початок шляху</div>
+                    <div class="timeline-content">
+                        <h3>Фундаментальна підготовка</h3>
+                        <p class="timeline-text">
+                            Стартував із вивчення базового синтаксису Python, основ вебу (HTML5/CSS3) та об'єктно-орієнтованого програмування. Сформував розуміння алгоритмічної логіки, чистих баз даних та систем контролю версій (Git/GitHub), що заклало базу для написання масштабованого коду.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<section class="contact" id="contact">
+    <div class="contact-container">
+        <div class="contact-header">
+            <h2 class="contact-title">Почнімо працювати разом</h2>
+            <p class="contact-subtitle">Маєш цікаву ідею, проєкт чи пропозицію про роботу? Напиши мені, і ми обговоримо деталі.</p>
+        </div>
+
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>Прямі контакти</h3>
+                <p class="info-text">Ви також можете зв'язатися зі мною через соціальні мережі або месенджери:</p>
+                <div class="contact-links">
+                    <a href="https://t.me/Alexei_tgg" target="_blank" class="contact-item">
+                        <i class="fab fa-telegram-plane"></i>
+                        <span>Telegram</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/programmingneon-926871410" target="_blank" class="contact-item">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/ProgrammingNeon" target="_blank" class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name-input" name="name" required placeholder=" ">
+                        <label for="name-input">Ім'я</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email-input" name="email" required placeholder=" ">
+                        <label for="email-input">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message-input" name="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message-input">Повідомлення</label>
+                    </div>
+                    <button type="submit" class="btn-submit">Надіслати повідомлення</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <p class="footer-copy">&copy; 2026 ALEX. Designed & Coded with Passion.</p>
+        <div class="footer-socials">
+            <a href="https://github.com/ProgrammingNeon" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/programmingneon-926871410" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://t.me/Alexei_tgg" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+:root {
+    --bg-dark: #0B0B0C;
+    --text-main: #FFFFFF;
+    --text-muted: #A0A0A5;
+    --accent-neon: #00E5FF;
+    --glass-bg: rgba(18, 18, 20, 0.4);
+    --glass-border: rgba(255, 255, 255, 0.05);
+}
+
+.experience {
+    position: relative;
+    padding: 100px 0;
+    background-color: var(--bg-dark);
+}
+
+.experience-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.experience-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.experience-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+}
+
+.experience-subtitle {
+    font-size: 16px;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.experience-timeline {
+    position: relative;
+    border-left: 2px solid rgba(255, 255, 255, 0.05);
+    padding-left: 32px;
+    margin-left: 10px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -42px;
+    top: 6px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--bg-dark);
+    border: 3px solid rgba(255, 255, 255, 0.15);
+    transition: border-color 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+}
+
+.timeline-item:hover .timeline-dot {
+    border-color: var(--accent-neon);
+    background: var(--accent-neon);
+    box-shadow: 0 0 12px var(--accent-neon);
+}
+
+.timeline-date {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accent-neon);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.timeline-content {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 14px;
+    padding: 28px;
+    transition: border-color 0.4s ease, transform 0.4s ease;
+}
+
+.timeline-item:hover .timeline-content {
+    border-color: rgba(0, 229, 255, 0.15);
+    transform: translateX(4px);
+}
+
+.timeline-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 12px;
+}
+
+.timeline-text {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .experience-timeline {
+        padding-left: 24px;
+    }
+    
+    .timeline-dot {
+        left: -33px;
+        width: 16px;
+        height: 16px;
+        top: 4px;
+    }
+    
+    .timeline-content {
+        padding: 20px;
+    }
+    
+    .timeline-content h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .experience-title {
+        font-size: 28px;
+    }
+}

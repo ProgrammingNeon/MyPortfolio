@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --bg-dark: #0B0B0C;
+    --text-main: #FFFFFF;
+    --text-muted: #A0A0A5;
+    --accent-neon: #00E5FF; 
+    --glass-bg: rgba(18, 18, 20, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-dark);
+}
